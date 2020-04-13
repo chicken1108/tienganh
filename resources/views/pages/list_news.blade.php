@@ -4,7 +4,7 @@
 @section('content')
 <div class="container" style="margin-top: 70px;">
 	<div class="col-9">
-		<a href="{{ route('home') }}" style="text-decoration: none;">Trang chủ </a>/ <span style="color: blue;">Tin tức hoạt động</span>
+		<a href="{{ route('home') }}" style="text-decoration: none;">Trang chủ </a>/ <span style="color: blue;">{{$cate->cate_title}}</span>
 	</div>
 	<div class="row">
 			@foreach($list_news as $ln)
