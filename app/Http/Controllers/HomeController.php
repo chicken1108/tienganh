@@ -22,6 +22,7 @@ class HomeController extends Controller
     public function getListNews($cate_id)
     {
     	$data['list_news'] = news::where('news_cateid','=',$cate_id)->paginate(5);
+        $data['cate'] = category::find($cate_id);
     	return view('pages.list_news', $data);
     }
 
