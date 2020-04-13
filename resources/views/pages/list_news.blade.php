@@ -1,5 +1,5 @@
 @extends('pages.layouts.index')
-@section('title')
+@section('title', $cate->cate_title)
 
 @section('content')
 <div class="container" style="margin-top: 70px;">
